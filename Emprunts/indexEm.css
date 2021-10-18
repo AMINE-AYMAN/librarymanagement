@@ -1,0 +1,84 @@
+html{
+  scroll-behavior: smooth;
+}
+
+.grid { 
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(580px, 2fr));
+    grid-gap: 10px;
+    align-items: stretch;
+    text-align: center;
+    }
+  .grid > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 4px 2px  rgba(0,0,0,0.2);
+  }
+  
+  .text {
+    padding: 0 20px 20px;
+    
+  }
+  .h{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+  }
+  .btn{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+  }
+  .btndelete{
+      background-color: rgb(253, 47, 47);
+      color: white;
+      width: 40%;
+      text-align: center;
+      padding: 5px;
+      text-decoration: none;
+      border-radius: 3px;
+  }
+  .btnapp{
+    background-color: #1DB954;
+    color: white;
+    width: 40%;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+.fas{
+    padding: 5px;
+    font-size: 1.1rem;
+}
+.btna{
+  background-color: #1DB954;
+    color: white;
+    width: 40%;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 3px;
+    border: none;
+}
+.searching{
+    padding: 5px 50px 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-right: 4px;
+    border: 1px solid rgb(223, 217, 217);
+}
+.searching:focus{
+  border: 2px solid #1DB954;
+  outline: none;
+}
+.wrapi {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.form-inline{
+  display: flex;
+  flex-flow: row nowrap;
+  
+}

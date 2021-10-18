@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+  
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">FS ELJADIDA UCD</label>
+      <ul>
+        <li><a class="active" href="#">Recherche Livre</a></li>
+        <li><a href="../resultatlivre.html">Liste Des livres</a></li>
+        <li><a href="../emprunte.html">Mes Emprunts</a></li>
+        <li><a href="#" class="ic"><i class="fas fa-user-alt"><span style="font-family: myfont;">  AMINE AYMAN</span></i></a> </li>
+        <li><a href="#" class="ic"><i class="fas fa-sign-out-alt"></i></a></li>
+      </ul>
+    </nav>
+
+    <script>
+      const cuurentlocation=location.href;
+      const menuItem=document.querySelectorAll('a');
+      const menuLength=menuItem.length;
+      for(let i=0;i<menuLength;i++){
+        if(menuItem[i].href===cuurentlocation){
+          menuItem[i].className="active";
+        }
+      }
+    </script>
+  </body>
+</html>

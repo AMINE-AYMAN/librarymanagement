@@ -1,0 +1,87 @@
+@font-face{
+    font-family: 'mtFont';
+    src: url('../Fonts/Lato-Light.ttf');
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bolder;
+}
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: mtFont;
+    font-size: 1rem;
+    line-height: 1.6;
+    height: 100%;
+}
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #162B32;
+}
+.login-form{
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    background: #ffffff;
+}
+.form-input{
+    background: #fafafa;
+    border: 1px solid #A9A9A9;
+    padding: 12px;
+    width: 100%;
+    font-family: mtFont;
+    font-size: 1rem;
+}
+.form-input:focus{
+    border: 1px solid rgb(214, 208, 208);
+    outline: none;
+    border-bottom: 2px solid #1DB954;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+.form-button{
+    background: #162B32;
+    border: 2px solid #1DB954;
+    border-radius: 3px;
+    color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: mtFont;
+    font-size: large;
+    cursor: pointer;
+}
+
+.form-button :hover{
+    background: #1c363f;
+}
+
+.form-header{
+    text-align: center;
+    margin-bottom : 2rem;
+}
+.form-footer{
+    text-align: center;
+}
+a:visited{
+    text-decoration: none;
+}
+.error{
+    background-color: rgb(247, 67, 67);
+    text-align: center;
+    border-radius: 3px;
+    width: 100%;
+    color: #ffffff;
+}
+

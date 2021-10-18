@@ -1,0 +1,71 @@
+html{
+    scroll-behavior: smooth;
+  }
+
+.wrap{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.wrappp{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly,
+}
+.row1{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.row2{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.update form {
+    padding: 15px 0;       
+}
+.update form label {
+    width: 400px;
+    padding: 10px 0;
+    margin-right: 25px;
+    color: black;
+    font-size: 1.1rem;
+}
+.update form select {
+    padding: 10px;
+    width: 400px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    font-family: myFont;
+    font-size: 2.9vh;
+}
+.update form input {
+    padding: 10px;
+    width: 400px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    font-family: myFont;
+    font-size: 2.9vh;
+}
+.update form input[type="submit"] {
+    display: block;
+    background-color: #162B32;
+    border: 2px solid #1DB954;
+    font-weight: bold;
+    font-size: 17px;
+    word-spacing: 10%;
+    color:white ;
+    cursor: pointer;
+    width: 30%;
+    margin-top: 15px;   
+    border-radius: 3px; 
+}
+.update form input[type="submit"]:hover {
+    background-color: #1b363f;
+
+}
+.update form input[type="text"]:focus,.update form input[type="password"]:focus {
+    outline: none;
+    border-bottom: 2px solid #1DB954;
+}

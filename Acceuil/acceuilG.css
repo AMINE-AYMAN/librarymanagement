@@ -1,0 +1,43 @@
+@font-face{
+    font-family: myFont;
+    src: url(../Fonts/Lato-Regular.ttf);
+}
+html{
+    scroll-behavior: smooth;
+  }
+body{
+    box-sizing: border-box;
+    background-color: #162B32;
+    font-family: myFont;
+    font-weight: bold;
+
+}
+.wrap{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column ;
+    align-items:center;
+}
+
+h1,h2{
+    font-family: myFont;
+    font-size: 2rem;
+    color: white;
+}
+a{
+    text-decoration: none;
+    background: #162B32;
+    border: 2px solid #1DB954;
+    color: #ffffff;
+    padding: 10px;
+    width: 20%;
+    text-transform: uppercase;
+    font-family: myFont;
+    font-size: large;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+a:hover{
+    background-color: #1a333b;
+}

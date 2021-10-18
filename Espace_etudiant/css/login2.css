@@ -1,0 +1,128 @@
+@font-face {
+    font-family: myfont;
+    src: url(../../Fonts/Lato-Regular.ttf);
+}
+
+:root{
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: myfont;
+}
+body{
+    font-weight: 500;
+}
+.bloc_page{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.form_img{
+    width: 50%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
+    url(../images/pexels-polina-zimmerman-3747565.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form_img h1, .form_img p{
+  color:white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.form_img p{
+    font-weight: 400;
+}
+.form_conn{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    flex-direction: column;
+}
+.form_login{
+    display: flex;
+    justify-content: center;
+    color: #1b363f;
+}
+.info{
+     margin-bottom: 35px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+.info h1{
+    margin-bottom: 5px;
+}
+.info h3{
+    font-size: 0.9em;
+}
+.inp{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+    font-size: 0.875rem;
+}
+.inp:focus{
+    outline: none;
+    border-bottom: 2px solid #1b363f;
+    
+}
+.ff{
+    margin: 20px 150px 0 0;
+    font-weight: 500;
+}
+.ff p{
+    margin-bottom: 8px;
+}
+.barecode{
+    margin-bottom:20px ;
+    width: 103%;
+}
+.barecode p{
+    text-align: center;
+}
+.form_bt #btv{
+    width: 180%;
+    padding: 1em;
+    font-size: 0.9em;
+    font-weight: bold;
+    border: none;
+    background-color: #1b363f;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#btv a{
+    color: white;
+    text-decoration: none;
+}
+@media screen and (max-width: 900px){
+    .bloc_page{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .form_img, .form_conn{
+       width: 100%;
+    }
+    .form_conn{
+        padding: 10px;
+    }
+
+}

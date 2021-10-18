@@ -1,0 +1,173 @@
+
+@font-face {
+  font-family: mtfont;
+  src: url(../Fonts/Product\ Sans\ Regular.ttf);
+}
+
+.overview_card-info{
+    font-size: 8vh;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myFont;
+    font-size: 18px;
+  }
+
+  .main {
+    grid-area: main;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .main_overview {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+  }
+  .overview_card {
+    flex-basis: 300px;
+    flex-grow: 1;
+    margin: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100px;
+    border: 2px solid #1b363f;
+    border-radius: 4px;
+    color: #1b363f;
+  }
+
+  .wrap1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+
+}
+.row11{
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+.row22{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+  /* responsive layout */
+  @media only screen and (min-width: 750px) {
+    .main_cards {
+      margin: 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 500px 500px;
+      grid-template-areas:
+        'card1 card2';
+      grid-gap: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 750px) {
+  .overview_card-icon{
+    font-size: 3vh;
+  }
+}
+
+.card {
+    margin-top: 13px;
+    padding: 17px;
+    background-color: #1b363f;
+    border-radius: 4px;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 400px;
+    width: 500px;
+  }
+
+  .card:nth-child(1) {
+    grid-area: card2;
+    background-color: #1DB954;
+    color: white;
+  }
+  .card:nth-child(2) {
+    background-color: rgb(250, 49, 49);
+    color: white;
+  }
+  .cardd{
+    margin-top: 13px;
+    padding: 17px;
+    border:2px solid #1b363f;
+    border-radius: 4px;
+    color: #1b363f;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 400px;
+    width: 500px;
+  }
+  .wr{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-evenly;
+  }
+  .ro{
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .overview_card1 {
+    flex: 0 0 10em;
+    flex-grow: 3;
+    margin: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px;
+    height: 100px;
+    border: 2px solid #1b363f;
+    border-radius: 4px;
+    color: #1b363f;
+  }
+  #bar-chart{
+    margin-top: 10px;
+    padding:20px;
+    width:40em;
+    height:20em;
+  }
+  .in{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  .pdf{
+    font-size: 1.1em;
+    padding: -1px;
+  }
+  @media (max-width: 800px) {
+    #bar-chart{
+      width: 20em;
+      height: 10em;
+    }
+  }
+  @media (max-width: 600px) {
+    #bar-chart{
+      width: 12em;
+      height: 10em;
+    }
+  }
+  @media (max-width: 400px) {
+    #bar-chart{
+      width: 10em;
+      height: 10em;
+    }
+  }
+
+  

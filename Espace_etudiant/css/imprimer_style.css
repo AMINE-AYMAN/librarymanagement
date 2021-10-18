@@ -1,0 +1,33 @@
+/*.bloc_page2{
+    background-color: whitesmoke;
+    width: 60%;
+    border: 2px solid;
+    height: 80vh;
+    margin: 0 auto;
+    padding: 30px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.main_imp{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.tab{
+    width: 100%;
+}
+.tab tr>td{
+    font-size: 1.3em;
+    width: 30%;
+}
+.btn button{
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1em; 
+}*/

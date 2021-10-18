@@ -1,0 +1,143 @@
+@font-face {
+    font-family: myfont;
+    src: url(../../Fonts/Lato-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: myfont;
+}
+.main{
+    height: 65vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url(../images/adult-1850177_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main_txt{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.main_txt h1{
+    font-size: 2.7em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.main_txt h3{
+    text-align: center;
+}
+.main_search{
+    width: 80%;
+}
+.bar_search p{
+    width: 100%;
+}
+.bar_search #txt{
+    height: 45px;
+    width: 60%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+#txt:focus{
+    outline: none;
+    border-bottom: 1px solid #0f73ee;
+    height: 45px;
+}
+.icon{
+    position: absolute;
+   height: 45px;
+   width: 50px;
+   border: none;
+   cursor: pointer;
+   background-color:#0f73ee;
+   font-size: larger;
+}
+.bar_search button{
+    color: white;
+}
+.bar_search button:hover{
+    background-color: #0f73ee;
+    color: white;
+}
+.bar_search button a:hover{
+    color: white;
+}
+.desc_search{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+span{
+    color: grey;
+}
+.btn_search{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.btn_search button, #bta, #btv{
+    height: 40px;
+    width: 20%;
+    margin: 0 10px 0 10px;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none;
+}
+#btv{
+    background-color:#0f73ee;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bta{
+    background-color: transparent;
+    border: 2px solid white;
+}
+#bta:hover{
+    background: rgba(0,0,0,0.3);
+}
+#btv:hover{
+    background: rgba(15, 115, 238, 0.8);
+}
+
+@media screen and (max-width: 900px)
+{
+    .icon{
+        width:40px;
+    }
+     .btn_search{
+         flex-direction: column;
+     }
+     .btn_search button, #bta,#btv{
+         width: 90%;
+         margin-top: 8px;
+     }
+     /*.bar_search button{
+        width: 20%;
+    }*/
+    .main{
+        height: 100vh;
+    }
+    .desc_search h4{
+        text-align: center;
+    }
+    .bar_search #txt{
+        width: 80%;
+    }
+}

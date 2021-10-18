@@ -1,0 +1,114 @@
+@font-face {
+    font-family: myfont;
+    src: url(../../Fonts/Lato-Regular.ttf);
+}
+*{
+    font-family: myfont;
+}
+.container1{
+   display: flex;
+   align-items: center;
+   height: 90vh;
+   flex-direction: column;
+   padding: 30px 0 30px 0;
+}
+.bloc_cont{
+    height: 250px;
+    width: 380px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20px 0 20px;
+    position: relative;
+    border-radius: 3px;
+}
+.bloc_cont img{
+    height: 250px;
+    width: 400px;
+    position: absolute;
+    border-radius: 3px;
+}
+.main_con{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.cont_txt{
+    margin: 0px 0 40px 0;
+    padding: 0 10px 10px 10px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+.cont_txt hr{
+    width: 50px;
+    margin:0 0 10px 150px;
+}
+.cont_txt p{
+    text-align: center;
+}
+.mask{
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    height: 250px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+    transition: top 0.7s linear;
+    color: white;
+    border-radius: 3px;
+}
+.bloc_cont:hover .mask{
+    visibility: visible;
+}
+.head_emp{
+    height: 45px;
+    background-color: whitesmoke;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head_emp ul{
+    display: flex;
+    flex-direction: row;
+}
+.head_emp ul li {
+    margin-right: 20px;
+    height: 45px;
+    padding: 0 10px 0 10px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head_emp ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #374957;
+}
+li.activ{
+    color: #5f7d95;
+    border-bottom: 2px solid #374957;
+}
+@media screen and (max-width: 900px){
+    .container1{
+        height: 200vh;
+     }
+    .main_con{
+        flex-direction: column;
+    }
+    .bloc_cont{
+        margin:0 0 20px 0;
+    }
+    .cont_txt{
+        margin-top: 30px;
+    }
+    .img{
+        width:100%;
+    }
+}
